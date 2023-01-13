@@ -1,7 +1,4 @@
-import { defArreyCard } from './random-default-coctails';
-import { ArrFetch } from './pagination';
 import obj from './localStorage';
-import { renderTextAndHeart } from './cocktails';
 import orangeHeart from '../images/svg/icons.svg';
 import { createCocktailModalCard } from './modal';
 import { clearModal } from './modalOpenClose';
@@ -19,7 +16,6 @@ const butOpCocArr = Array.from(butQwe);
 butOpCocArr.map(but => {
   but.addEventListener('click', showFavorite);
 });
-// addEventListener('click', showFavorite);
 
 function showFavorite() {
   const backdropEl = document.querySelector('.backdrop-mob.js-menu-container');
@@ -40,9 +36,7 @@ function showFavorite() {
     </div>
 
     <script type="module" src="/src/index.js"></script>
-</body>
-
-   `
+</body>`
   );
   if (document.querySelector('.default-text')) {
       heroEl.style.marginBottom = '40px';
@@ -60,13 +54,9 @@ function createFullMarkup(obj) {
  textEl.style.display = 'none';
   }
   return obj.map(
-      cocktail =>
-
-        `
+      cocktail => `
         <li id="${cocktail.idDrink}" class="favorite__item">   
           <div class="favorite__wraper">
-
-
           <div class="favorite__image-part">
             <picture>
               <source
@@ -129,12 +119,6 @@ function createFullMarkup(obj) {
   `
     )
     .join('');
-    let  ButLearnMoreArrFav = document.querySelectorAll('.favorite__item');
-      console.log(ButLearnMoreArrFav);
-//       const ArrButCard = Array.from(ButLearnMoreArrFav);
-//       ArrButCard.map(but => {
-//         but.addEventListener('click', modalOpenClose);
-//       });
 }
 const favBody = document.querySelector('body');
 
@@ -146,10 +130,8 @@ function deleteFromFavoriteSec(event) {
     button.addEventListener('click', addOrRemove);
 
     function addOrRemove(event) {
-      // console.dir(event.target);
       if (event.target.innerText == 'Remove') {
         const idToRemove = event.target.attributes[0].nodeValue;
-        // console.log(idToRemove);
 
         event.target.innerHTML = `Add to
           <div class="product__heart-wraper">

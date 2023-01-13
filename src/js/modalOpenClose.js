@@ -1,7 +1,7 @@
 import { ArrFetch } from "./pagination";
 import { defArreyCard } from "./random-default-coctails";
 import {createCocktailModalCard} from './modal'
-// console.log(defArreyCard);
+
 export const backdropEl = document.querySelector('[data-modal-cocktail]');
 export const cocktailModalCard = document.querySelector('.modal-cocktail');
 

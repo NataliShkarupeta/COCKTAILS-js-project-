@@ -22,11 +22,7 @@ const backdropMob = document.querySelector('.backdrop-mob');
 const dropdownContent = document.querySelector('.dropdown-content button');
 const favoriteI = document.querySelector('.favorite-ingridients');
 const mobMenuItem = document.querySelector('.mob-menu__link');
-
-// const paginatorItem = document.querySelector('.paginator-item');
 const productTiteitle = document.querySelector('.product__title');
-// const btnOrRemove = document.querySelector('.button__add-or-remove');
-// const blac = document.querySelector('.checkbox__dark');
 
 slider.addEventListener('click', changeTheme);
 sliderr.addEventListener('click', changeThemeMain);
@@ -45,12 +41,7 @@ function changeTheme() {
     dropBTNMob.style.borderSolid = 'var(--orange-text-color)';
     iconMenu.style.color = 'var(--white-bg-color)';
     backdropMob.style.background = 'var(--black-bg-color)';
-    // btnOrRemove.style.background = 'var(--black-bg-color)';
-    // productTitle.style.color = 'var(--white-bg-color)';
-    // paginatorItem.style.color = 'var(--white-bg-color)';
     productTiteitle.style.color = 'var(--white-bg-color)';
-    // ligh.style.color = 'var(--white-bg-color)';
-    // blac.style.color = 'var(--orange-text-color)';
     lightt.style.color = 'var(--white-bg-color)';
     blackk.style.color = 'var(--orange-text-color)';
     mobMenuItem.style.color = 'var(--white-bg-color)';
@@ -68,11 +59,6 @@ function changeTheme() {
     backdropMob.style.background = 'var(--white-bg-color)';
     iconMenu.style.color = 'var(--black-bg-color)';
     productTiteitle.style.color = 'var(--black-bg-color)';
-    // btnOrRemove.style.background = 'var(--white-bg-color)';
-    // paginatorItem.style.color = 'var(--black-bg-color)';
-    // favorTiteitle.style.color = 'var(--white-bg-color)';
-    // ligh.style.color = 'var(--orange-text-color)';
-    // blac.style.color = 'var(--black-bg-color)';
     lightt.style.color = 'var(--orange-text-color)';
     blackk.style.color = 'var(--black-bg-color)';
     mobMenuItem.style.color = 'var(--black-bg-color)';
@@ -94,11 +80,6 @@ function changeThemeMain() {
     iconMenu.style.color = 'var(--white-bg-color)';
     backdropMob.style.background = 'var(--black-bg-color)';
     productTiteitle.style.color = 'var(--white-bg-color)';
-    // btnOrRemove.style.background = 'var(--black-bg-color)';
-    // paginatorItem.style.color = 'var(--white-bg-color)';
-    // favorTiteitle.style.color = 'var(--black-bg-color)';
-    // ligh.style.color = 'var(--white-bg-color)';
-    // blac.style.color = 'var(--orange-text-color)';
     lightt.style.color = 'var(--white-bg-color)';
     blackk.style.color = 'var(--orange-text-color)';
     mobMenuItem.style.color = 'var(--white-bg-color)';
@@ -116,11 +97,6 @@ function changeThemeMain() {
     iconMenu.style.color = 'var(--black-bg-color)';
     backdropMob.style.background = 'var(--white-bg-color)';
     productTiteitle.style.color = 'var(--black-bg-color)';
-    // btnOrRemove.style.background = 'var(--white-bg-color)';
-    // favorTiteitle.style.color = 'var(--white-bg-color)';
-    // paginatorItem.style.color = 'var(--black-bg-color)';
-    // ligh.style.color = 'var(--orange-text-color)';
-    // blac.style.color = 'var(--black-bg-color)';
     lightt.style.color = 'var(--orange-text-color)';
     blackk.style.color = 'var(--black-bg-color)';
     mobMenuItem.style.color = 'var(--black-bg-color)';

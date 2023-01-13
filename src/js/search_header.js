@@ -39,8 +39,6 @@ function searchValueHeader(e) {
         cnt = 3;
         count = drinks.length;
         let cnt_page = Math.ceil(count / cnt);
-        // console.log(count);
-        // console.log(cnt_page);
         let page = '';
         for (let i = 0; i < cnt_page; i++) {
           page +=
@@ -98,8 +96,6 @@ function searchValueHeader(e) {
         cnt = 6;
         count = drinks.length;
         let cnt_page = Math.ceil(count / cnt);
-        // console.log(count);
-        // console.log(cnt_page);
         let page = '';
         for (let i = 0; i < cnt_page; i++) {
           page +=
@@ -116,11 +112,9 @@ function searchValueHeader(e) {
         paginator.innerHTML = page;
 
         let div_num = document.querySelectorAll('.product__wraper');
-        //   console.log(div_num);
         for (let i = 0; i < div_num.length; i++) {
           if (i < cnt) {
             listEl.style.gap = '0';
-            // div_num[i].style.display = 'block';
             div_num[i].style.cssText = `
                  display:block;
                  margin-right: 10px;
@@ -166,8 +160,6 @@ function searchValueHeader(e) {
         cnt = 9;
         count = drinks.length;
         let cnt_page = Math.ceil(count / cnt);
-        // console.log(count);
-        // console.log(cnt_page);
         let page = '';
         for (let i = 0; i < cnt_page; i++) {
           page +=
@@ -184,11 +176,9 @@ function searchValueHeader(e) {
         paginator.innerHTML = page;
 
         let div_num = document.querySelectorAll('.product__wraper');
-        //   console.log(div_num);
         for (let i = 0; i < div_num.length; i++) {
           if (i < cnt) {
             listEl.style.gap = '0';
-            // div_num[i].style.display = 'block';
             div_num[i].style.cssText = `
                  display:block;
                  margin-right: 10px;
@@ -203,15 +193,11 @@ function searchValueHeader(e) {
         pagEl.addEventListener('click', pagination);
 
         function pagination(event) {
-          //   console.log(mainEl);
-          //   mainEl.innerHTML = '';
 
           const e = event || window.event;
           const target = e.target;
           const id = target.id;
           if (target.tagName.toLowerCase() !== 'button') return;
-
-          //     let num_ = id.substr(4);
           let data_page = +target.dataset.page;
           console.log(data_page);
           main_page.classList.remove('paginator_active');

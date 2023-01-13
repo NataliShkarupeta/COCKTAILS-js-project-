@@ -107,7 +107,6 @@ function createFullMarkup(obj) {
         </div>
       </li>
       
-  `
-    )
+  ` )
     .join('');
 }

@@ -205,9 +205,7 @@ function findCocktailData(event) {
 }
 
 function deleteFromStorageMurkup(event, cocktailId) {
-  if (event.target.innerText === 'Remove') {
-    // console.log(event.target.innerText);
-    event.target.innerHTML = `Add to
+  if (event.target.innerText === 'Remove') { event.target.innerHTML = `Add to
   <div class="product__heart-wraper">
     <svg class="product__big-icon--add" viewBox="0 0 35 32" xmlns="http://www.w3.org/2000/svg">
       <use href="${orangeHeart}#bigHeart"></use>
@@ -218,16 +216,6 @@ function deleteFromStorageMurkup(event, cocktailId) {
   </div>`;
   }
   remove(KEYFAVORITE, cocktailId);
-  // for (let i = 0; i < rightCocktail.length; i++) {
-  //   console.log(favoriteArr[i].idDrink);
-  //   console.log(cocktailId);
-  //   console.log(favoriteArr[i].idDrink === cocktailId);
-
-  //   if (favoriteArr[i].idDrink === cocktailId) {
-  //     return favoriteArr.slice(i);
-  //   }
-  // }
-  // return;
 }
 
 function AddToStorageMurkup(event, cocktailFromFetch, cocktailId) {
