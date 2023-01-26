@@ -5,5 +5,6 @@ export const url_ingredient_by_name = `https://thecocktaildb.com/api/json/v1/1/s
 export function fetchApi(url, el) {
   return fetch(`${url}${el}`).then(response => {
     return response.json();
+    // console.log(response.json());
   });
 }

@@ -158,19 +158,21 @@ function deleteFromFavoriteSec(event) {
           </svg>
         </div>`;
         addToFavoriteLocalStorage(KEYFAVORITE, cocktailFromFetch, idToRemove);
-      }else
-      if (event.target.innerText === 'Learn more') {
-         backdropEl.classList.toggle('is-hidden2');
-         clearModal(cocktailModalCard);
-        const arrFromLS = JSON.parse(localStorage.getItem('cocktails'));
-        idCard = event.target.attributes[0].value;
-       
-        const el = arrFromLS.find(obj => obj.idDrink === idCard);
-        
-            createCocktailModalCard(el);
-        const closeBtn = document.querySelector('[data-modal-cocktail-close]');
-        closeBtn.addEventListener('click', backdropElToggle);
       }
+      // else
+      // if (event.target.innerText === 'Learn more') {
+      //    backdropEl.classList.toggle('is-hidden2');
+      //    clearModal(cocktailModalCard);
+      //   const arrFromLS = JSON.parse(localStorage.getItem('cocktails'));
+      //   idCard = event.target.attributes[0].value;
+      //   console.log(idCard);
+       
+      //   const el = arrFromLS.find(obj => obj.idDrink === idCard);
+        
+      //       createCocktailModalCard(el);
+      //   const closeBtn = document.querySelector('[data-modal-cocktail-close]');
+      //   closeBtn.addEventListener('click', backdropElToggle);
+      // }
     }
   }
 }
